@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+        /* Definindo a estrutura do layout com Flexbox */
+        #content-container {
+            display: flex;
+            justify-content: space-between; /* Espaço entre o mapa e o formulário */
+            flex-wrap: wrap; /* Permite que os elementos quebrem a linha em telas pequenas */
+            gap: 20px; /* Espaçamento entre os elementos */
+            padding-bottom: 40px;
+        }
+
+        /* Contêiner do formulário */
+        #contact-form {
+            flex: 1; /* O formulário vai ocupar o máximo de espaço disponível */
+            min-width: 300px; /* Garante que o formulário não fique muito pequeno */
+            max-width: 600px; /* Limita a largura do formulário */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            margin-left: 100px; /* Adiciona margem para afastar o formulário da borda */
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        #contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contêiner do mapa */
+        #map-container {
+            flex: 1; /* O mapa vai ocupar o máximo de espaço disponível */
+            min-width: 300px; /* Garante que o mapa não fique muito pequeno */
+            max-width: 800px; /* Limita a largura do mapa */
+            margin-right: 100px; /* Adiciona margem para afastar o mapa da borda */
+        }
+
+        #map-container iframe {
+            width: 800; /* Faz com que o mapa ocupe toda a largura disponível */
+            height: 600 px; /* Definindo altura fixa para o mapa */
+            border: 0; /* Remove a borda do mapa */
+        }
+
+        /* Garantir que em telas pequenas o mapa e o formulário fiquem embaixo */
+        @media (max-width: 768px) {
+            #content-container {
+                flex-direction: column; /* Coloca o mapa e o formulário em coluna */
+            }
+
+            #map-container, 
+            #contact-form {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myentirehtmlcode">
+        
+        <header id="headerlogo" class="horizontal">
+            <div id="divlogo" class="horizontal">
+                <img src="images/logo.jpg" alt="site icon" id="imglogo">
+                <p id="textlogo">Clube de Regatas Flamengo</p>
+            </div>
+            <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            <div id="navbar">
+                <ul>
+                    <li><a href="site.html" class="textnavbar">Mengão</a></li>
+                    <li><a href="about.html" class="textnavbar">Sobre</a></li>
+                    <li><a href="galery.html" class="textnavbar">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div id="textcontent2">
+            <img src="" alt="" id="">
+            <p id="liberta"></p>
+        </div>
+
+        <!-- Contêiner que agrupa o mapa e o formulário -->
+        <div id="content-container">
+            <!-- Formulário de mensagem (agora à esquerda) -->
+            <div id="contact-form">
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input class="form-control" type="text" name="nome" id="nome">
+
+                    <label for="telefone">Telefone:</label>
+                    <input class="form-control" type="tel" name="telefone" id="telefone">
+
+                    <label for="email">E-mail:</label>
+                    <input class="form-control" type="email" name="email" id="email">
+
+                    <label for="mensagem">Digite a sua mensagem:</label>
+                    <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <!-- Contêiner do mapa (agora à direita) -->
+            <div id="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1733790183772!6m8!1m7!1sCAoSLEFGMVFpcE1lR1ZUaHZiX3d0MGNVM1d4N3FGS2hvRUVkNnVrS1UtbUhVaWFl!2m2!1d-22.98412521823967!2d-43.50578316304118!3f300!4f0!5f0.7820865974627469" 
+                        width="600" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div id="final">
+            Clube de Regatas Flamengo <br>
+            Estrada dos Bandeirantes, 25997, Vargem Grande - Rio de Janeiro<br>
+            Telefone:  (21) 2159-0100<br>
+            Whatsapp:  (21) 2159-0100<br>
+            E-mail: ouvidoria@flamengo.com.br <br>
+            <a href="https://www.youtube.com/@flamengo" target="_blank"><img class="icons" src="https://imagepng.org/wp-content/uploads/2017/09/youtube-play-icone.png"></a>
+            <a href="https://www.instagram.com/flamengo/" target="_blank"><img class="icons" src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon-1.png"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

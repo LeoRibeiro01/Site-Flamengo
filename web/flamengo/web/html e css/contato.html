@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contato - Flamengo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="home.html">
+        <img src="img/logo.jpg" alt="Logo Flamengo" class="logo-img">
+        Clube de Regatas Flamengo
+      </a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="about.html">História</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Fale Conosco</h2>
+      <div class="contact-container">
+        <!-- Formulário -->
+        <div class="form-container">
+          <form action="enviar_mensagem.php" method="post">
+            <div class="form-group">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+          </form>
+        </div>
+
+        <!-- Localização -->
+        <div class="location-container">
+          <h3>Localização da Loja Oficial</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.375169288238!2d-43.218664985496446!3d-22.978083096607975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76ed4b0ba7fcb7f%3A0xf4667f19a54ede37!2sLoja%20Oficial%20do%20Flamengo!5e0!3m2!1spt-BR!2sbr!4v1734198694118!5m2!1spt-BR!2sbr"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Clube de Regatas Flamengo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="mobile-navbar.js"></script>
+</body>
+</html>

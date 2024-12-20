@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    
+</head>
+
+<body>
+    <div id="myentirehtmlcode">
+        
+        <header id="headerlogo" class="horizontal">
+            <div id="divlogo" class="horizontal">
+                <img src="images/logo.jpg" id="imglogo">
+                
+                <p id="textlogo"> Clube de Regatas Flamengo </p>
+            </div>
+            <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+            <div id="navbar">
+                <ul>
+                    <li><a href="site.html" class="textnavbar"> Mengão </a></li>
+                    <li><a href="about.html" class="textnavbar"> Sobre </a></li>
+                    <li><a href="galery.html" class="textnavbar"> Fale Conosco </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="divtitle">
+            <h1 id="texttitle">Flamengo, o maior time do mundo</h1>
+        </div>
+        <div>
+            <div id="textcontent1">
+                <p id="mundial"> Em dezembro de 81, o título mais importante da história do flamengo foi conquistado, o mundial de clubes </p>
+                <img src="images/mundial1.jpg" alt="81" id="fotomundial">
+            </div>
+            <div id="textcontent2">
+                <img src="images/liberta2.jpg" alt="2019" id="fotoliberta">
+                <div id="textcandy">
+                    <p id="liberta"> Em novembro de 2019, provavelmente o dia mais emocionante para um flamenguista </p>
+                </div>
+            </div>
+        </div>
+        <div id="final">
+            Clube de Regatas Flamengo <br>
+            Estrada dos Bandeirantes, 25997, Vargem Grande - Rio de Janeiro<br>
+            Telefone:  (21) 2159-0100<br>
+            Whatsapp:  (21) 2159-0100<br>
+            E-mail: ouvidoria@flamengo.com.br <br>
+            <a href="https://www.youtube.com/@flamengo" target="_blank"><img class="icons" src="https://imagepng.org/wp-content/uploads/2017/09/youtube-play-icone.png"></a>
+            <a href="https://www.instagram.com/flamengo/" target="_blank"><img class="icons" src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon-1.png"></a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>
